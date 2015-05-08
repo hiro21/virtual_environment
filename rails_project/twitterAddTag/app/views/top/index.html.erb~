@@ -1,0 +1,5 @@
+<h1>アカウント</h1>
+<%= form_tag "/top/show" do%>
+	<%= text_field :accountName, :accountName %>
+	<%= submit_tag "send" %>
+<% end %>

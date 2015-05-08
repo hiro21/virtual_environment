@@ -1,0 +1,10 @@
+class TwitterViewController < ApplicationController
+  def index
+#         @accountName = params[:accountName] 
+#	 puts 'test'
+#	 puts @accountName
+	 tmpVals = params[:accountName] 
+         @accountName = tmpVals['accountName']
+	 puts @accountName
+  end
+end
