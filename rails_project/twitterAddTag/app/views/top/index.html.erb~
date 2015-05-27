@@ -1,5 +1,12 @@
 <h1>アカウント</h1>
-<%= form_tag "/top/show" do%>
+<%= form_tag "/top/show", :method => "get" do%>
 	<%= text_field :accountName, :accountName %>
-	<%= submit_tag "send" %>
+	<!--<%= submit_tag "send" %>-->
+<% if signed_in? %>
+	Welcome <%= session[:username] %>!
+	<%= link_to "Sign Out", "/signout" %>
+<% else %>
+	<%= link_to "Sign in with Twitter", "/auth/twitter" %>
 <% end %>
+<% end %>
+

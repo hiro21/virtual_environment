@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get 'twitter_view/index'
   get 'top/index'
   get 'top/show/' => 'twitter_view#index'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -56,4 +58,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+end
+
+TwitterAddTag::Application.routes.draw do
+  get '/auth/:provider/callback' => 'sessions#create'
+  get '/signout' => 'sessions#destroy'
 end
