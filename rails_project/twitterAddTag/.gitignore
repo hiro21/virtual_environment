@@ -14,3 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# ~ file
+*~
+
+# swp file
+*.swp
