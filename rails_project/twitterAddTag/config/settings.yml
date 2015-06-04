@@ -1,0 +1,10 @@
+defaults: &defaults
+        twetter_consumer_key: ""
+        twetter_consumer_secret: ""
+
+development:
+        <<: *defaults
+test:
+        <<: *defaults
+production:
+        <<: *defaults
