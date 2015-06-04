@@ -27,10 +27,8 @@ class TwitterViewController < ApplicationController
 
   def twitter_client
 	  client = Twitter::REST::Client.new do |config|
-		  #:oauth_token => session[:oauth_token],
-		  #:oauth_token_secret => session[:oauth_token_secret]
-		  config.consumer_key = "yy17LtGmrMGWiXDOtA0FrlHO5"
-		  config.consumer_secret = "M39T8VyBFFnT5uVOpKRensidjvE7SY8DJfKH60Uf7OQLpumiDu"
+		  config.consumer_key = Settings.twetter_consumer_key
+		  config.consumer_secret = Settings.twetter_consumer_secret
 		  config.access_token = session[:oauth_token]
 		  config.access_token_secret = session[:oauth_token_secret]
 	  

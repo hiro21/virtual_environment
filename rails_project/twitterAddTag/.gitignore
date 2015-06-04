@@ -20,3 +20,6 @@
 
 # swp file
 *.swp
+
+#setting
+/config/settings.yml
