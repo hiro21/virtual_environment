@@ -16,8 +16,16 @@ class TwitterViewController < ApplicationController
 	  timelines = twitter_client.user_timeline(user, option)
 	  @timelines = Array.new
 	  timelines.each do |line|
-		  puts line.text
 		  @timelines.push(line.text)
+
+		  # debug
+		  puts "test start"
+		  #puts "#{line.in_reply_to_screen_name}" 
+		  #puts "#{line.in_reply_to_status_id}" 
+		  #puts "#{line.in_reply_to_user_id}" 
+		  puts "#{line.in_reply_to_tweet_id}" 
+		  puts "#{line.lang}" 
+		  puts "test end"
 	  end
 	  #Twitter.user_timeline(user, option).each do |res|
 #	  twitter_client.user_timeline(user, option).each do |res|

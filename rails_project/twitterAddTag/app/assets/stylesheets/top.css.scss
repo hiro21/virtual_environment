@@ -1,3 +1,42 @@
 // Place all the styles related to the top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#id-tweettag {
+          float: left;
+}
+
+#id-view {
+          float: right;
+}
+
+.table-common {
+	#width:100%;
+	border-collapse: separate;
+	border-spacing: 0px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+.label-user {
+	width: 100%;
+}
+.table-common th{
+	#width: 25%;
+	padding: 4px;
+	text-align: left;
+	vertical-align: top;
+	color: #444;
+	background-color: #ccc;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.table-common td{
+	padding: 4px;
+	background-color: #fafafa;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.table-tweet-eria {
+}

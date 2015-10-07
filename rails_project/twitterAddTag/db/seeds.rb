@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Tagmaster.create(:tag_id => 1, :tag_name => 'red', :css_class => 'red')
+Tagmaster.create(:tag_id => 2, :tag_name => 'blue', :css_class => 'blue')
+Tagmaster.create(:tag_id => 3, :tag_name => 'yellow', :css_class => 'yellow')

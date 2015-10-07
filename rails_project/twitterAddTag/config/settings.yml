@@ -1,6 +1,6 @@
 defaults: &defaults
-        twetter_consumer_key: ""
-        twetter_consumer_secret: ""
+        twetter_consumer_key: "yy17LtGmrMGWiXDOtA0FrlHO5"
+        twetter_consumer_secret: "M39T8VyBFFnT5uVOpKRensidjvE7SY8DJfKH60Uf7OQLpumiDu"
 
 development:
         <<: *defaults

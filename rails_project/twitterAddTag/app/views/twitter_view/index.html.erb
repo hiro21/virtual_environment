@@ -1,7 +1,20 @@
 <h1>TwitterView#index</h1>
 <p>Find me in app/views/twitter_view/index.html.erb</p>
-account:<%= @accountName %>
-<% timelines = @timelines %>
-<% timelines.each do |line| %>
-	<%= line %><br>
-<% end %>
+<label class="label-user">account:<%= @accountName %></label><br>
+<div id="id-tweettag"></div>
+	タグエリア
+<div id="id-view">
+	<table class="table-common">
+		<tr>
+			<th>tweet</th>
+		</tr>
+		<% timelines = @timelines %>
+		<% timelines.each do |line| %>
+		<tr>
+			<td>
+				<%= line %>
+			</td>
+		</tr>
+		<% end %>
+	</table>
+</div>
